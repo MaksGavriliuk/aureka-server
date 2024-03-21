@@ -7,3 +7,9 @@ services:
     container_name: eureka-server
     ports:
       - '8761:8761'
+    networks:
+      mynetwork:
+
+networks:
+  mynetwork:
+    external: true
